@@ -157,7 +157,6 @@ $(".saveBtn").on("click", function (event) {
     event.preventDefault();
     var saveIndex = $(this).siblings(".description").children(".future").attr("id");
     dayHr[saveIndex].reminder = $(this).siblings(".description").children(".future").val();
-    console.log(saveIndex);
     saveTasks();
     displayTasks();
 })
